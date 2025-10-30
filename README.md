@@ -309,7 +309,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 📧 Liên hệ
 
 - **Email**: your.email@example.com
-- **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
+- **Issues**: [GitHub Issues](https://github.com/nguyenngocbinh/EGP_Portfolio_Optimization/issues)
 
 ## 🙏 Acknowledgments
 
