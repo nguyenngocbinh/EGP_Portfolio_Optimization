@@ -58,7 +58,7 @@ class DataPreprocessor:
             raise ValueError("Method must be 'zscore' or 'iqr'")
         
         # Forward fill NaN values
-        cleaned = cleaned.fillna(method='ffill').fillna(method='bfill')
+        cleaned = cleaned.ffill().bfill()
         
         return cleaned
     

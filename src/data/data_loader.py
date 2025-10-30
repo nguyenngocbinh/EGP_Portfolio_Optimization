@@ -139,7 +139,7 @@ class VNDataLoader:
             prices_df = prices_df.resample('M').last()
         
         # Forward fill missing values
-        prices_df = prices_df.fillna(method='ffill')
+        prices_df = prices_df.ffill()
         
         return prices_df
     
@@ -187,7 +187,7 @@ class VNDataLoader:
                 index_series = index_series.resample('M').last()
             
             # Forward fill
-            index_series = index_series.fillna(method='ffill')
+            index_series = index_series.ffill()
             
             return index_series
             
