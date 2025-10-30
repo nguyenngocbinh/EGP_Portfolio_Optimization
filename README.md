@@ -31,7 +31,7 @@ w_i = Z_i / Σ|Z_j|
 ## 🚀 Cài đặt
 
 ### Yêu cầu hệ thống
-- Python >= 3.8
+- Python >= 3.10 (required by vnstock3)
 - pip hoặc conda
 
 ### Cài đặt dependencies
