@@ -51,7 +51,7 @@ jobs:
         pytest tests/ -v --cov=src --cov-report=xml --cov-report=html --cov-report=term
     
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v4
       with:
         file: ./coverage.xml
         flags: unittests
@@ -59,9 +59,9 @@ jobs:
         fail_ci_if_error: false
     
     - name: Archive code coverage results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        name: code-coverage-report
+        name: code-coverage-report-${{ matrix.python-version }}
         path: htmlcov/
 
   lint:
@@ -119,7 +119,7 @@ jobs:
       continue-on-error: true
     
     - name: Upload security reports
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: security-reports
         path: bandit-report.json
